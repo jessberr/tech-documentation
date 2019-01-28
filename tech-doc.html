@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="tech-doc.css" type="text/css">
+  <title>JavaScript Variables</title>
+</head>
+<body>
+  <div id="nav-div">
+    <nav id="navbar">
+      <header id="JavaScript_Variables">JavaScript Variables</header>
+      <div id="links">
+        <a href="#What_are_variables_?" rel="internal" class="nav-link">What are variables?</a>
+        <a href="#Declaring_variables" class="nav-link" rel="internal">Declaring variables</a>
+        <a href="#Initializing_a_variable" class="nav-link" rel="internal">Initializing a variable</a>
+        <a href="#Updating_variables" class="nav-link" rel="internal">Updating variables</a>
+        <a href="#Types_of_variables" class="nav-link" rel="internal">Types of variables</a>
+        <a href="#Dynamic_Typing" class="nav-link" rel="internal">Dynamic Typing</a>
+        <a href="#Summary" class="nav-link" rel="internal">Summary</a>
+      </div>
+    </nav>
+  </div>
+  <div id="main-content">
+    <main id="main-doc">
+      <section class="main-section" id="What_are_variables_?">
+        <header>What are variables?</header>
+        <p>Variables are containers for values. They can be anything, such as a number or string. Variables can be updated and are vital in writing JavaScript. </p>
+      </section>
+      <section class="main-section">
+        <header id="Declaring_variables">Declaring variables</header>
+        <p>To use a variable, you've first got to create it — more accurately, we call this declaring the variable. To do this, we type the keyword var or let followed by the name you want to call your variable:</p>
+        <code>
+          <pre>
+
+            let myName;
+            let myAge;
+          </pre>
+        </code>
+      </section>
+      <section class="main-section" id="Initializing_a_variable">
+        <header>Initializing a variable</header>
+        <p>Once you've declared a variable, you can initialize it with a value. You do this by typing the variable name, followed by an equals sign (=), followed by the value you want to give it. For example:</p>
+        <code>
+          <pre>
+
+           myName = 'Chris';
+          </pre>
+        </code>
+        <code>
+          <pre>
+
+           myAge = 37;
+          </pre>
+        </code>
+        <p>You can declare and initialize a variable at the same time, like this:</p>
+        <code>
+          <pre>
+
+            let myDog = 'Rover';
+          </pre>
+        </code>
+        <p>This is probably what you'll do most of the time, as it is quicker than doing the two actions on two separate lines.</p>
+      </section>
+
+      <section class="main-section" id="Updating_variables">
+        <header>Updating variables</header>
+        <p>Once a variable has been initialized with a value, you can change (or update) that value by simply giving it a different value.
+You can call a variable pretty much anything you like, but there are limitations. Generally, you should stick to just using Latin characters (0-9, a-z, A-Z) and the underscore character.
+</p>
+        <p>Here are a few guidlines for naming variables:</p>
+        <ul>
+          <li>You shouldn't use other characters because they may cause errors or be hard to understand for an international audience.</li>
+          <li>Don't use underscores at the start of variable names — this is used in certain JavaScript constructs to mean specific things, so may get confusing.</li>
+          <li>Don't use numbers at the start of variables. This isn't allowed and will cause an error.</li>
+          <li>A safe convention to stick to is so-called "lower camel case", where you stick together multiple words, using lower case for the whole first word and then capitalize subsequent words. We've been using this for our variable names in the article so far.</li>
+          <li>Make variable names intuitive, so they describe the data they contain. Don't just use single letters/numbers, or big long phrases.</li>
+          <li>Variables are case sensitive — so myage is a different variable to myAge.</li>
+          <li>One last point — you also need to avoid using JavaScript reserved words as your variable names — by this, we mean the words that make up the actual syntax of JavaScript! So, you can't use words like var, function, let, and for as variable names. Browsers will recognize them as different code items, and so you'll get errors.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Types_of_variables">
+        <header>Types of variables</header>
+        <p>Variables may be strings, numbers, arrays, objects,or booleans.</p>
+      </section>
+      <section class="main-section" id="Dynamic_Typing">
+        <header >Dynamic Typing</header>
+        <p>JavaScript is a "dynamically typed language", which means that, unlike some other languages, you don't need to specify what data type a variable will contain (numbers, strings, arrays, etc).</p>
+        <p>For example, if you declare a variable and give it a value enclosed in quotes, the browser will treat the variable as a string:</p>
+        <code>
+          <pre>
+
+            let myString = 'Hello';
+          </pre>
+        </code>
+      </section>
+      <section class="main-section" id="Summary">
+        <header>Summary</header>
+        <p>By now you should know a reasonable amount about JavaScript variables and how to create them. In the next article, we'll focus on numbers in more detail, looking at how to do basic math in JavaScript.</p>
+      </section>
+    </main>
+    <div id="extras">
+      <p id="source">
+  Information found at <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables">Mozilla Developers.</a>
+  </p>
+      <a href="#" id="top-link">Return to top</a>
+    </div>
+  </div>
+</body>
+</html>
