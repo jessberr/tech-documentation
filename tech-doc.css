@@ -1,6 +1,7 @@
-#nav-div{
+#navbar{
   background-color: #99C5C5;
   margin-bottom: 5px;
+  height: 410px;
 }
 
 #main-content{
@@ -26,7 +27,13 @@ p, a, li{
   font-size: 16px;
 }
 
-#links a{
+#links-1 a{
+  font-style: italic;
+  display: block;
+  text-align: center;
+  line-height: 2em;
+}
+#links-2 a{
   font-style: italic;
   display: block;
   text-align: center;
@@ -55,12 +62,30 @@ pre{
   padding:5px;
   text-align: center;
 }
+@media only screen and (max-width: 400px){
+  #links-1 a{
+    font-style: italic;
+    display: block;
+    text-align: center;
+    line-height: 3em;
+    width:50%;
+    float:left;
+  }
+  #links-2 a{
+    font-style: italic;
+    display: block;
+    text-align: center;
+    line-height: 3em;
+    width:50%;
+    float:left;
+  }
+}
+
 
 @media only screen and (min-width: 500px) {
 
   #navbar{
   position:fixed;
-  float: left;
   top:0px;
   left:0px;
   width:150px;
